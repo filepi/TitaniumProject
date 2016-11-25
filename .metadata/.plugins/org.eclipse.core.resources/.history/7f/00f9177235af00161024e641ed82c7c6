@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container" layout="vertical" >
+		<Label text="L('question')" />
+		<TextField />
+		<Label text="L('answers')" />
+			<TextField id="txt_right_answer" width="70" color="#336699"/>
+			<TextField id="txt_wrong_answer1" width="70"/>
+			<TextField id="txt_wrong_answer2" width="70" color="#336699"/>
+			<TextField id="txt_wrong_answer3" />
+		<Button title="L('save_and_create_next')" />
+		<Button title="L('save_and_finish')" />
+	</Window>
+</Alloy>

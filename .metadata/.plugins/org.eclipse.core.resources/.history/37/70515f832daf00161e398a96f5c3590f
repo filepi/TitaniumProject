@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string name="create">Create</string>
+	<string name="type_the_name_of_your_quizz">Type the name your quizz</string>
+	<string name="delete">Delete</string>
+	<string name="right">Right</string>
+	<string name="wrong">Wrong</string>
+	
+</resources>

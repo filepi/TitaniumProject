@@ -1,0 +1,70 @@
+//var dbhelper = require('./dbhelper');
+//dbhelper.install();
+
+
+// Arguments passed into this controller can be accessed via the `$.args` object directly or:
+var args = $.args;
+
+var listaDePerguntas = [];
+var materia = args[0];
+Ti.API.info(materia);Ti.API.info(materia);Ti.API.info(materia);Ti.API.info(materia);Ti.API.info(materia);Ti.API.info(materia);Ti.API.info(materia);Ti.API.info(materia);
+
+function saveAndCreateNext(e)
+{
+	var question = $.txt_question.value;
+	var respostaCerta = $.txt_right_answer.value;
+	var respostaErrada1 = $.txt_wrong_answer1.value;
+	var respostaErrada2 = $.txt_wrong_answer2.value;
+	var respostaErrada3 = $.txt_wrong_answer3.value;
+	
+	var questao = {
+		_pergunta: question,
+		_respostaCerta: respostaCerta,
+		_respostaErrada1: respostaErrada1,
+		_respostaErrada2: respostaErrada2,
+		_respostaErrada3: respostaErrada3
+		};
+			
+	listaDePerguntas.push(questao);
+	$.toast.show();
+	clearText();
+}
+
+function validateFields()
+{
+	//TODO: Check if fields are correctly filled	
+}
+
+function clearText()
+{
+	$.txt_question.value = "";
+	$.txt_right_answer.value = "";
+	$.txt_wrong_answer1.value = "";
+	$.txt_wrong_answer2.value = "";
+	$.txt_wrong_answer3.value = "";	
+}
+
+
+function cancel(e)
+{
+	listaDePerguntas = [];
+	$.questionsView.close();
+}
+
+function insertInDatabase(questao)
+{
+	
+}
+
+/*
+function testList(list){
+	for (var i=0; i < list.length -1 ; i++) {
+	  Ti.API.info(list[i]._pergunta);
+	  Ti.API.info(list[i]._respostaCerta);
+	  Ti.API.info(list[i]._respostaErrada1);
+	  Ti.API.info(list[i]._respostaErrada2);
+	  Ti.API.info(list[i]._respostaErrada3);
+	};
+}
+*/
+

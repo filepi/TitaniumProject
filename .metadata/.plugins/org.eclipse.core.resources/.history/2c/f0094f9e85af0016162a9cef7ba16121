@@ -1,0 +1,16 @@
+<Alloy>
+	<Window class="container" >
+		<Button onClick="cadastrarQuizz" title="L('create_new_quizz')" />
+		<TableView id="myTableView" dataCollection="filmes">
+			<TableViewRow>
+				<View id="view">
+					<ImageView id="image"/>
+					<View id="viewDados">
+						<Label id="tituloLabel"/>
+						<Label id="anoLabel"/>
+					</View>
+				</View>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" layout="vertical" >
+			<Label id="lbl_type_quizz_name" text="L('type_the_name_of_your_quizz')" />
+			<TextField id="txt_quizz_name"  borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" hintText="L('quizz_sample_name')" />
+			<Button id="btn_create" onClick="criarPerguntasDoQuizz" title="L('create')"/>
+	</Window>
+</Alloy>

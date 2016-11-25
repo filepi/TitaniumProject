@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container" layout="vertical" >
+		<Label text="L('question')" />
+		<TextField id="txt_question" />
+		<Label text="L('answers')" />
+		<TextField id="txt_right_answer"/>
+		<TextField id="txt_wrong_answer1" />
+		<TextField id="txt_wrong_answer2" />
+		<TextField id="txt_wrong_answer3" />
+		<Button onClick="saveAndCreateNext" title="L('save_and_create_next')" />
+		<Button title="L('save_and_finish')" />
+		<Button onClick="cancel" title="L('cancel')" />
+	</Window>
+</Alloy>

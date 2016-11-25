@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string name="create">Create</string>
+	<string name="type_the_name_of_your_quizz">Type the name your quizz</string>
+	<string name="delete">Delete</string>
+	<string name="right">Right</string>
+	<string name="wrong">Wrong</string>
+	<string name="answers">Answers</string>
+	<string name="save_and_create_next">Save and create another one</string>
+	<string name="save_and_finalize">Salvar e finish</string>
+	
+</resources>

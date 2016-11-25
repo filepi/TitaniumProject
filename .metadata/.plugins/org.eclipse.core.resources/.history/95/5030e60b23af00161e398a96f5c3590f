@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container" >
+		<View>
+			<Label> Digite o nome do Quizz</Label>
+			<TextField width="70"></TextField> 
+			<Button Top onClick="criarPerguntasDoQuizz">Criar</Button>
+		</View>
+	</Window>
+</Alloy>

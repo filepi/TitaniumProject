@@ -1,0 +1,11 @@
+<Alloy>
+	<Window class="container" layout="vertical">
+		<Button onClick="cadastrarQuizz" title="L('create_new_quizz')" />
+		<TableView id="myTableView"  width="500" heiheight="700">
+		<HeaderView>
+                        <View backgroundColor="#a00" height="50dp"/>
+                    </HeaderView>
+			
+		</TableView>
+	</Window>
+</Alloy>

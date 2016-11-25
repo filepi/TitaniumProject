@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container">
+		<Label id="label" onClick="doClick">Felipe Barbosa</Label>
+		<Button onClick="cadastrarNovoQuizz">+ Cadastrar</Button>
+	</Window>
+</Alloy>

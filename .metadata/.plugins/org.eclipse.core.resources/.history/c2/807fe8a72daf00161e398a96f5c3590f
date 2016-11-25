@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string name="create">Criar</string>
+	<string name="type_the_name_of_your_quizz">Digite o nome do seu jogo</string>
+	<string name="delete">Excluir</string>
+	<string name="right">Correta</string>
+	<string name="wrong">Errada</string>
+	<string name="answers">Respostas</string>
+	<string name="save_and_create_next">Salvar e criar outra</string>
+</resources>

@@ -1,0 +1,80 @@
+var dbhelper = require('dbhelper.js');
+
+dbhelper.instalacao();
+
+var tableData = [];
+
+for (var i = 0; i <= 20; i++){
+  var row = Ti.UI.createTableViewRow({
+    className: 'row',
+    objName: 'row',
+    touchEnabled: true,
+    height: 100
+  });
+
+  var label = Ti.UI.createLabel({
+    backgroundColor:'#313F48',
+    color: 'white',
+    objName: 'label',
+    text: i,
+    touchEnabled: false,
+    left: 0,
+    width: 200
+  });
+  disabledWrapperView.add(label);
+
+  row.add(enabledWrapperView);
+  tableData.push(row);
+}
+
+$.table.setData(tableData);
+
+$.index.add($.table);
+
+$.index.open();
+
+/*
+ 
+ 
+
+var dbhelper = require('dbhelper.js');
+
+dbhelper.instalacao();
+var quizzList = 
+[
+{"name":"Felipe", "sobrenome":"Barbosa"},
+{"name":"Thiago", "sobrenome":"Cavalcanti"}
+];
+
+//var quizzes = dbhelper.buscarQuizzes();
+//Ti.API.info('Quizzes cadastrados: ' + quizzes.length);
+
+
+	var row = Ti.UI.createTableViewRow();
+	var view = Titanium.UI.createView(
+	{
+  		backgroundColor:'red',
+  		title:'meu cu',
+  		width: 20,
+  		height: 20
+	}
+);
+	row.add(view);
+  
+	var row2 = Ti.UI.createTableViewRow({
+	quizzName:'Teste2',
+	backgroundColor: 'green',
+	height:40
+});
+
+
+$.myTableView.appendRow(row);
+$.myTableView.appendRow(row2);
+$.index.open();
+
+
+function cadastrarQuizz(e)
+{
+	var quizzWindow = Alloy.createController('cadastroQuizz').getView();
+	quizzWindow.open();
+} */

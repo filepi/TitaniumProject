@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container" layout="vertical">
+		<Button onClick="cadast rarQuizz" title="L('create_new_quizz')" />
+		<TableView id="myTableView" width="500" heiheight="700"/>
+	</Window>
+</Alloy>

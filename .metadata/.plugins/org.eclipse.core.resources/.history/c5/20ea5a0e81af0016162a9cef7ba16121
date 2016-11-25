@@ -1,0 +1,41 @@
+var dbFileSource = 'db/Quizz.sqlite';
+var dbFileTarget = 'quizz.sqlite';
+
+exports.instalacao = function() {
+	var db = Ti.Database.install(dbFileSource, dbFileTarget);
+	db.close();
+};
+
+exports.cadastrarMateria = function(materia) {
+	try {
+		var db = Ti.Database.open(dbFileTarget);
+		var stringSQL = "INSERT INTO MATERIA (MATERIA_ID, MATERIA_DESCRICAO) VALUES (6, 'a')"; 
+		var result = db.execute(stringSQL);
+		Ti.API.info("materia: " + materia);
+		Ti.API.info("result: " + result);
+	} catch(e) {
+		alert("erro" + e.message);	
+		Ti.API.info("erro: " + e.message);
+	} finally {
+		db.close();	
+	} 
+	
+};
+/*
+exports.consultarUsuarios = function() {
+	var db = Ti.Database.open(dbFileTarget);
+	var rs = db.execute('select * from users');
+	var users = [];
+	while (rs.isValidRow()) {
+		users.push({
+			id:rs.fieldByName('id'),
+			nome:rs.fieldByName('nome'),
+			email:rs.fieldByName('email')
+		});
+		rs.next();
+	}
+	db.close();
+	
+	return users;
+};
+ */

@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" layout="vertical" >
+			<Label id="lbl_type_quizz_name" text="Digite o nome do Quizz" />
+			<TextField/>
+			<Button id="btn_create" onClick="criarPerguntasDoQuizz" title="L('label')""/>
+	</Window>
+</Alloy>

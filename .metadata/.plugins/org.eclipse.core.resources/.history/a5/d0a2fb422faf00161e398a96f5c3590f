@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container" >
+		<Button onClick="cadastrarQuizz" title="L('create')" />
+	</Window>
+</Alloy>

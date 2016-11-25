@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="questionsView" class="container" layout="vertical" >
+		<Label text="L('question')" />
+		<TextField id="txt_question"  />
+		<Label text="L('answers')" />
+		<TextField id="txt_right_answer"  backgroundColor="#329932"/>
+		<TextField id="txt_wrong_answer1" backgroundColor="#ff1919" />
+		<TextField id="txt_wrong_answer2" backgroundColor="#ff1919"/>
+		<TextField id="txt_wrong_answer3" backgroundColor="#ff1919"/>
+		<View layout="horizontal" center="true">
+			<Button onClick="saveAndCreateNext" title="L('save_and_create_next')" />
+			<Button onClick="finish" title="L('save_and_finish')" />
+			<Button onClick="cancel" title="L('cancel')" />
+		</View>
+		<Notification id="toast" platform="android" message="L('saved')" duration="Ti.UI.NOTIFICATION_DURATION_SHORT" />
+	</Window>
+</Alloy>
